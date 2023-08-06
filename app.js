@@ -24,8 +24,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors({ origin: true })); // Automatically allow cross-origin requests
-app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, "frontend", "build")));
+// app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "frontend")));
 // app.use(
 //   session({
 //     secret: process.env.SESSION_SECRET,
@@ -71,7 +71,7 @@ app.use("/rct-api/demandes", demandeRouter); // gestion des demandes d'adhésion
 app.use("/rct-api/parametres", parametresRouter); // configuration des paramètres de l'application
 
 app.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "frontend", "index.html"));
 });
 
 // catch 404 and forward to error handler
