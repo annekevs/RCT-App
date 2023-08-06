@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.721f82fc.css",
-    "main.js": "/static/js/main.a6fd6a25.js",
+    "main.js": "/static/js/main.17c27022.js",
     "static/js/787.0f425d4f.chunk.js": "/static/js/787.0f425d4f.chunk.js",
     "static/media/doctor_woman_1.jpg": "/static/media/doctor_woman_1.cb51a22ab56aa3f81012.jpg",
     "static/media/doctor_woman_2.jpg": "/static/media/doctor_woman_2.3e7596afd80367db6147.jpg",
     "static/media/doctor_man_1.jpg": "/static/media/doctor_man_1.9f77bfd54636df6875e0.jpg",
     "index.html": "/index.html",
     "main.721f82fc.css.map": "/static/css/main.721f82fc.css.map",
-    "main.a6fd6a25.js.map": "/static/js/main.a6fd6a25.js.map",
+    "main.17c27022.js.map": "/static/js/main.17c27022.js.map",
     "787.0f425d4f.chunk.js.map": "/static/js/787.0f425d4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.721f82fc.css",
-    "static/js/main.a6fd6a25.js"
+    "static/js/main.17c27022.js"
   ]
 }

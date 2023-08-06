@@ -74,21 +74,15 @@ class AppDAO {
         .query(sql, params)
         .then((res, err) => {
           if (err) throw err;
-          console.log(
-            "pool data : ",
-            "###active ",
-            this.pool.activeConnections(),
-            "### idle ",
-            this.pool.idleConnections(),
-            "### total ",
-            this.pool.totalConnections()
-          );
           resolve(res);
         })
         .catch((err) => {
           //console.log("an error occured while running this query: ", sql, params);
           reject(err);
         });
+      // .finally(() => {
+      //   if (this.conn) this.conn.end();
+      // });
     });
   }
 }

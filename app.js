@@ -24,9 +24,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors({ origin: true })); // Automatically allow cross-origin requests
-// app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, "frontend", "build")));
-
+app.use(express.static(path.join(__dirname, "public")));
 // app.use(
 //   session({
 //     secret: process.env.SESSION_SECRET,
@@ -65,17 +63,12 @@ db.init()
     );
   });
 
-// app.use("/", indexRouter);
+app.use("/", indexRouter);
 app.use("/rct-api/login", authController); // connexion à l'application
 app.use("/rct-api/admin", adminRouter); // interface d'administration (acces, creation des utilisateurs, dashboard et statistiques globales)
 app.use("/rct-api/gestion", registreRouter); // gestion du dossier médical et des patients
 app.use("/rct-api/demandes", demandeRouter); // gestion des demandes d'adhésion et d'inscription
 app.use("/rct-api/parametres", parametresRouter); // configuration des paramètres de l'application
-
-// serve react js as frontend
-app.get("*", async (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
-});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
