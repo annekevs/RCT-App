@@ -5,20 +5,20 @@ class UserModel {
   constructor(dao) {
     this.dao = dao;
 
-    this.TABLE_NAME = "user";
+    this.TABLE_NAME = "compte";
     this.USER_ID = "id";
-    this.USER_NAME = "username";
+    this.USER_MAIL = "email";
     this.USER_PWD = "password";
     this.USER_ROLE = "role";
-    this.USER_DISABLED = "disabled";
+    this.USER_ACTIVATED = "isActivated";
 
     // requête pour la création de la table
     this.TABLE_CREATE = ` CREATE TABLE IF NOT EXISTS ${this.TABLE_NAME} (
             ${this.USER_ID} INTEGER PRIMARY KEY AUTO_INCREMENT,
-            ${this.USER_NAME} TEXT,
+            ${this.USER_MAIL} TEXT,
             ${this.USER_PWD} TEXT,
             ${this.USER_ROLE} TEXT,
-            ${this.USER_DISABLED} INT DEFAULT 0
+            ${this.USER_ACTIVATED} INT DEFAULT 0
         )`;
   }
 
@@ -26,10 +26,10 @@ class UserModel {
   getModelFields() {
     return {
       USER_ID: this.USER_ID,
-      USER_NAME: this.USER_NAME,
+      USER_MAIL: this.USER_MAIL,
       USER_PWD: this.USER_PWD,
       USER_ROLE: this.USER_ROLE,
-      USER_DISABLED: this.USER_DISABLED,
+      USER_ACTIVATED: this.USER_ACTIVATED,
     };
   }
 
@@ -37,10 +37,10 @@ class UserModel {
   getlikeFields() {
     return {
       USER_ID: this.USER_ID + "_l",
-      USER_NAME: this.USER_NAME + "_l",
+      USER_MAIL: this.USER_MAIL + "_l",
       USER_PWD: this.USER_PWD + "_l",
       USER_ROLE: this.USER_ROLE + "_l",
-      USER_DISABLED: this.USER_DISABLED + "_l",
+      USER_ACTIVATED: this.USER_ACTIVATED + "_l",
     };
   }
 

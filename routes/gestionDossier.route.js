@@ -48,7 +48,7 @@ router.post("/dossier", ctrlDossier.create);
 router.post("/dossier/complete", completeDossier); // remplir le dossier en creant ses elts du dossier
 router.get("/dossier/:id", getDossierOne);
 // router.put("/dossier/:id", ctrlDossier.update);
-router.put("/dossier/:id", updateDossier);
+router.put("/dossier/:id", ctrlDossier.update);
 router.delete("/dossier/:id", ctrlDossier.delete);
 
 // ============= ELT_DOSSIER ====================

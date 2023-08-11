@@ -11,7 +11,7 @@ class MedecinModel {
     this.MEDECIN_PRENOM = "prenom";
     this.MEDECIN_SEXE = "sexe";
     this.MEDECIN_DATE_NAISS = "date_naissance";
-    this.MEDECIN_MAIL = "adresse_mail";
+    this.MEDECIN_MAIL = "email";
     this.MEDECIN_ADRESSE = "adresse";
     this.MEDECIN_PHONE = "telephone";
     this.MEDECIN_NATION = "nationalite";

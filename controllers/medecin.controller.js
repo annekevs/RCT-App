@@ -53,11 +53,11 @@ const createMedecin = async (req, res) => {
             nom: medecin.nom,
             prenom: medecin.prenom,
             userID: medecin.id,
-            mail: medecin.adresse_mail,
+            email: medecin.adresse_mail,
           };
           const welcomeMailData = MailService.mailInfo(infoUser).welcome;
           MailService.sendMail(
-            medecin.adresse_mail,
+            medecin.email,
             welcomeMailData.subject,
             welcomeMailData.message
           )

@@ -34,7 +34,8 @@ exports.INFO_DEMANDES = {
 };
 
 exports.USER_ROLES = {
-  admin: 1,
-  praticien: 2,
-  gerant: 3,
+  admin: "1111", // super admin
+  praticien: "0110", // super praticien
+  assitant: "0011", // super assistant
+  gerant: "0111", //super assistant
 };

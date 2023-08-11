@@ -10,6 +10,7 @@ class PatientModel {
     this.PATIENT_NOM = "nom";
     this.PATIENT_PRENOM = "prenom";
     this.PATIENT_SEXE = "sexe";
+    this.PATIENT_NIU = "niu";
     this.PATIENT_DATE_NAISS = "date_naissance";
     this.PATIENT_ADRESSE = "adresse";
     this.PATIENT_MAIL = "adresse_mail";
@@ -33,6 +34,7 @@ class PatientModel {
       PATIENT_NOM: this.PATIENT_NOM,
       PATIENT_PRENOM: this.PATIENT_PRENOM,
       PATIENT_SEXE: this.PATIENT_SEXE,
+      PATIENT_NIU: this.PATIENT_NIU,
       PATIENT_DATE_NAISS: this.PATIENT_DATE_NAISS,
       PATIENT_ADRESSE: this.PATIENT_ADRESSE,
       PATIENT_MAIL: this.PATIENT_MAIL,
@@ -55,6 +57,7 @@ class PatientModel {
       PATIENT_NOM: this.PATIENT_NOM + "_l",
       PATIENT_PRENOM: this.PATIENT_PRENOM + "_l",
       PATIENT_SEXE: this.PATIENT_SEXE + "_l",
+      PATIENT_NIU: this.PATIENT_NIU + "_l",
       PATIENT_DATE_NAISS: this.PATIENT_DATE_NAISS + "_l",
       PATIENT_ADRESSE: this.PATIENT_ADRESSE,
       PATIENT_MAIL: this.PATIENT_MAIL + "_l",

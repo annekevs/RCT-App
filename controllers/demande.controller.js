@@ -69,20 +69,13 @@ const getAllDemande = async (req, res) => {
 const acceptDemande = async (req, res) => {
   const { demandeID, medecin, motif } = req.body;
   // generer les identifiants par défaut pour le nouvel utilisateur
-  const gen_username = generateString(8, medecin.nom + medecin.prenom);
-  const gen_password = generateString(10, gen_username + "@1234567890");
-  console.log(
-    "username generated for medecin : ",
-    gen_username,
-    gen_password,
-    encryptUserID(medecin.id)
-  );
+  const gen_password = generateString(10, medecin.email + "@1234567890");
   // creer le nouvel utilisateur
   daoUsers
     .exec()
     .save({
       id: encryptUserID(medecin.id),
-      username: gen_username,
+      email: medecin.email,
       password: gen_password,
       role: USER_ROLES.praticien,
     })
@@ -118,13 +111,12 @@ const acceptDemande = async (req, res) => {
         nom: medecin.nom,
         prenom: medecin.prenom,
         userID: medecin.id,
-        username: gen_username,
         password: gen_password,
-        mail: medecin.adresse_mail,
+        mail: medecin.email,
       };
       const acceptMailData = MailService.mailInfo(infoUser).accept;
       MailService.sendMail(
-        medecin.adresse_mail,
+        medecin.email,
         acceptMailData.subject,
         acceptMailData.message
       )
@@ -178,12 +170,12 @@ const rejetDemande = async (req, res) => {
         nom: medecin.nom,
         prenom: medecin.prenom,
         userID: medecin.id,
-        mail: medecin.adresse_mail,
+        mail: medecin.email,
         motif: motif,
       };
       const rejetMailData = MailService.mailInfo(infoUser).rejet;
       MailService.sendMail(
-        medecin.adresse_mail,
+        medecin.email,
         rejetMailData.subject,
         rejetMailData.message
       )
