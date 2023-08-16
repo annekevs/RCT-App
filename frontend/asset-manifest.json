@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.721f82fc.css",
+    "main.js": "/static/js/main.7ed44bb4.js",
+    "static/js/865.ad767992.chunk.js": "/static/js/865.ad767992.chunk.js",
+    "static/js/724.d854cf14.chunk.js": "/static/js/724.d854cf14.chunk.js",
+    "static/js/278.f6f3389b.chunk.js": "/static/js/278.f6f3389b.chunk.js",
+    "static/js/18.9eb06d92.chunk.js": "/static/js/18.9eb06d92.chunk.js",
+    "static/js/787.0f425d4f.chunk.js": "/static/js/787.0f425d4f.chunk.js",
+    "static/js/355.f3b9d1cd.chunk.js": "/static/js/355.f3b9d1cd.chunk.js",
+    "static/js/688.f3e542c6.chunk.js": "/static/js/688.f3e542c6.chunk.js",
+    "static/js/43.d80d8fdb.chunk.js": "/static/js/43.d80d8fdb.chunk.js",
+    "static/js/183.6a03898b.chunk.js": "/static/js/183.6a03898b.chunk.js",
+    "static/media/doctor_woman_1.jpg": "/static/media/doctor_woman_1.cb51a22ab56aa3f81012.jpg",
+    "static/media/doctor_woman_2.jpg": "/static/media/doctor_woman_2.3e7596afd80367db6147.jpg",
+    "static/media/doctor_man_1.jpg": "/static/media/doctor_man_1.9f77bfd54636df6875e0.jpg",
+    "index.html": "/index.html",
+    "main.721f82fc.css.map": "/static/css/main.721f82fc.css.map",
+    "main.7ed44bb4.js.map": "/static/js/main.7ed44bb4.js.map",
+    "865.ad767992.chunk.js.map": "/static/js/865.ad767992.chunk.js.map",
+    "724.d854cf14.chunk.js.map": "/static/js/724.d854cf14.chunk.js.map",
+    "278.f6f3389b.chunk.js.map": "/static/js/278.f6f3389b.chunk.js.map",
+    "18.9eb06d92.chunk.js.map": "/static/js/18.9eb06d92.chunk.js.map",
+    "787.0f425d4f.chunk.js.map": "/static/js/787.0f425d4f.chunk.js.map",
+    "355.f3b9d1cd.chunk.js.map": "/static/js/355.f3b9d1cd.chunk.js.map",
+    "688.f3e542c6.chunk.js.map": "/static/js/688.f3e542c6.chunk.js.map",
+    "43.d80d8fdb.chunk.js.map": "/static/js/43.d80d8fdb.chunk.js.map",
+    "183.6a03898b.chunk.js.map": "/static/js/183.6a03898b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.721f82fc.css",
+    "static/js/main.7ed44bb4.js"
+  ]
+}
