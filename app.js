@@ -63,7 +63,7 @@ db.init()
       error
     );
   });
-
+// just for commit it
 app.use("/rct-api/login", authController); // connexion à l'application
 app.use("/rct-api/admin", adminRouter); // interface d'administration (acces, creation des utilisateurs, dashboard et statistiques globales)
 app.use("/rct-api/gestion", registreRouter); // gestion du dossier médical et des patients
